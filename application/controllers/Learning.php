@@ -12,7 +12,16 @@ class Learning extends CI_Controller
     public function index()
     {
         # code...
-        $this->load->view('v_home');
+        $this->load->view('template/v_header');
+        $this->load->view('template/v_home');
+        $this->load->view('template/v_footer');
+    }
+
+    public function about()
+    {
+        $this->load->view('template/v_header');
+        $this->load->view('template/v_about');
+        $this->load->view('template/v_footer');
     }
 }
 
